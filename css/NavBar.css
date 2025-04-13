@@ -1,0 +1,33 @@
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    gap: 200px;
+    width: 100%;
+  }
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-logo a {
+    font-size: 1.5rem;
+  }
+
+  
+.navbar-right {
+    display: flex;
+    gap: 20%;
+    align-items: center;
+
+  }
+
+.navbar-right input {
+    font-family: Inder;
+    padding: 5px;
+    padding-left: 15px;
+    width: 300px;
+}

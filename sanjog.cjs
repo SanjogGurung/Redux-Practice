@@ -41,7 +41,15 @@ const store = createStore(reducer);
 console.log(store.getState());
 
 // Registers listeners via subscribe(listener)
-store.subscribe(()=>console.log("Updated State ", store.getState()));
+const unsubscribe = store.subscribe(()=>console.log("Updated State ", store.getState()));
 
 // Allows state to be updated via dispatch(action)
 store.dispatch(orderPizza());
+store.dispatch(orderPizza());
+store.dispatch(orderPizza());
+store.dispatch(orderPizza());
+store.dispatch(orderPizza());
+store.dispatch(orderPizza());
+unsubscribe();
+store.dispatch(orderPizza());
+
